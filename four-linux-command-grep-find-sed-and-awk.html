@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
         <meta charset="utf-8" />
-        <title>protream</title>
+        <title>Four linux command: grep, find, sed and awk</title>
         <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
@@ -14,13 +14,18 @@
         <header id="banner" class="body">
                 <h1><a href="/">protream </a></h1>
                 <nav><ul>
-                    <li><a href="/category/linux.html">linux</a></li>
+                    <li class="active"><a href="/category/linux.html">linux</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+<section id="content" class="body">
+  <article>
+    <header>
+      <h1 class="entry-title">
+        <a href="/four-linux-command-grep-find-sed-and-awk.html" rel="bookmark"
+           title="Permalink to Four linux command: grep, find, sed and awk">Four linux command: grep, find, sed and awk</a></h1>
+    </header>
 
-            <aside id="featured" class="body">
-                <article>
-                    <h1 class="entry-title"><a href="/four-linux-command-grep-find-sed-and-awk.html">Four linux command: grep, find, sed and awk</a></h1>
+    <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-01-15T15:00:00+01:00">
                 Published: 四 15 一月 2015
@@ -31,7 +36,7 @@
         </address>
 <p>In <a href="/category/linux.html">linux</a>. </p>
 
-</footer><!-- /.post-info --><p>朋友让我帮忙写一个python脚本: 找出一个目录下所有的<code>.txt</code>文件然后将它们的文件名写入一个文件中. 我所想的是这样一个任务应该不需要动用牛刀, 用linux命令就可以解决. 然而我一时并没有想出来怎么写这个命令, 后来初步学习了下<code>grep</code>, <code>find</code>, <code>sed</code>, <code>awk</code>这四个命令, 最后用<code>ls</code>, <code>grep</code>, <code>sed</code>这三个命令组合解决了这个问题：
+</footer><!-- /.post-info -->      <p>朋友让我帮忙写一个python脚本: 找出一个目录下所有的<code>.txt</code>文件然后将它们的文件名写入一个文件中. 我所想的是这样一个任务应该不需要动用牛刀, 用linux命令就可以解决. 然而我一时并没有想出来怎么写这个命令, 后来初步学习了下<code>grep</code>, <code>find</code>, <code>sed</code>, <code>awk</code>这四个命令, 最后用<code>ls</code>, <code>grep</code>, <code>sed</code>这三个命令组合解决了这个问题：
 {% highlight bash %}
 ls -R | grep '.txt$' | sed 's/.txt$//g' &gt; results
 {% endhighlight %}
@@ -86,11 +91,11 @@ find -name '*.pyc' -exec rm -f {} + <br /></p>
 <h4>sed</h4>
 <p>参考这里: <a href="http://coolshell.cn/articles/9104.html">sed简明教程</a></p>
 <h4>awk</h4>
-<p>参考这里: <a href="http://coolshell.cn/articles/9070.html">awk简明教程</a></p>                </article>
-<p class="paginator">
-    Page 1 / 1
-</p>
-            </aside><!-- /#featured -->
+<p>参考这里: <a href="http://coolshell.cn/articles/9070.html">awk简明教程</a></p>
+    </div><!-- /.entry-content -->
+
+  </article>
+</section>
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
